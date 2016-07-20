@@ -19,77 +19,89 @@
 		
 			<div class = "scores">
 				<div class = "row row20">
-					<div class = "col-xs-5 p1ScoreInput20" ng-model="controller.form.p1_20">
-						<img src = "../images/score0.svg">
+					<div class = "col-xs-5 p1ScoreInput20">
+						<img ng-click= "controller.scoreCounter0120()" ng-src = "../images/score{{controller.p1_20}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>20</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInput20" ng-model="controller.form.p2_20">
-						<img src = "../images/score0.svg">
+					<div class = "col-xs-5 p2ScoreInput20">
+						<img ng-click= "controller.scoreCounter0220()" ng-src = "../images/score{{controller.p2_20}}.svg">
 					</div>
 				</div>
 			
 				<div class = "row row19">
-					<div class = "col-xs-5 p1ScoreInput19" ng-model="controller.form.p1_19">
+					<div class = "col-xs-5 p1ScoreInput19">
+						<img ng-click= "controller.scoreCounter0119()" ng-src = "../images/score{{controller.p1_19}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>19</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInput19" ng-model="controller.form.p2_19">
+					<div class = "col-xs-5 p2ScoreInput19">
+						<img ng-click= "controller.scoreCounter0219()" ng-src = "../images/score{{controller.p2_19}}.svg">
 					</div>
 				</div>
 
 				<div class = "row row18">
-					<div class = "col-xs-5 p1ScoreInput18" ng-model="controller.form.p1_18">
+					<div class = "col-xs-5 p1ScoreInput18">
+						<img ng-click= "controller.scoreCounter0118()" ng-src = "../images/score{{controller.p1_18}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>18</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInput18" ng-model="controller.form.p2_18">
+					<div class = "col-xs-5 p2ScoreInput18">
+						<img ng-click= "controller.scoreCounter0218()" ng-src = "../images/score{{controller.p2_18}}.svg">
 					</div>
 				</div>
 
 				<div class = "row row17">
-					<div class = "col-xs-5 p1ScoreInput17" ng-model="controller.form.p1_17">
+					<div class = "col-xs-5 p1ScoreInput17">
+						<img ng-click= "controller.scoreCounter0117()" ng-src = "../images/score{{controller.p1_17}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>17</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInput17" ng-model="controller.form.p2_17">
+					<div class = "col-xs-5 p2ScoreInput17">
+						<img ng-click= "controller.scoreCounter0217()" ng-src = "../images/score{{controller.p2_17}}.svg">
 					</div>
 				</div>
 
 				<div class = "row row16">
-					<div class = "col-xs-5 p1ScoreInput16" ng-model="controller.form.p1_16">
+					<div class = "col-xs-5 p1ScoreInput16">
+						<img ng-click= "controller.scoreCounter0116()" ng-src = "../images/score{{controller.p1_16}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>16</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInput16" ng-model="controller.form.p2_16">
+					<div class = "col-xs-5 p2ScoreInput16">
+						<img ng-click= "controller.scoreCounter0216()" ng-src = "../images/score{{controller.p2_16}}.svg">
 					</div>
 				</div>
 
 				<div class = "row row15">
-					<div class = "col-xs-5 p1ScoreInput15" ng-model="controller.form.p1_15">
+					<div class = "col-xs-5 p1ScoreInput15">
+						<img ng-click= "controller.scoreCounter0115()" ng-src = "../images/score{{controller.p1_15}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>15</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInput15" ng-model="controller.form.p2_15">
+					<div class = "col-xs-5 p2ScoreInput15">
+						<img ng-click= "controller.scoreCounter0215()" ng-src = "../images/score{{controller.p2_15}}.svg">
 					</div>
 				</div>
 
 				<div class = "row rowBull">
-					<div class = "col-xs-5 p1ScoreInputBull" ng-model="controller.form.p1_bull">
+					<div class = "col-xs-5 p1ScoreInputBull">
+						<img ng-click= "controller.scoreCounter01Bull()" ng-src = "../images/score{{controller.p1_bull}}.svg">
 					</div>
 					<div class = "col-xs-2 centerScore">
 						<p>Bull</p>
 					</div>
-					<div class = "col-xs-5 p2ScoreInputBull" ng-model="controller.form.p2_bull">
+					<div class = "col-xs-5 p2ScoreInputBull">
+						<img ng-click= "controller.scoreCounter02Bull()" ng-src = "../images/score{{controller.p2_bull}}.svg">
 					</div>
 				</div>
-			</div>
+
 			<div class = "row rowFooter">
 				<div class = "col-xs-12">
 					<button type="submit" class="btn btn-primary" ng-click="controller.postGame()">Submit</button>
