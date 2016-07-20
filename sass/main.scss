@@ -1,0 +1,18 @@
+$green: #7cbd7e;
+$offWhite: #faf8f5;
+$gray: #3b3d3d;
+$blue: #018CCF;
+
+$mainFont: 'Mukta Vaani', sans-serif;
+
+@import "header";
+@import "home";
+
+body{
+	background: $green;
+	font-family: $mainFont;
+	color: $blue;
+}
+
+
+

@@ -1,0 +1,75 @@
+	.rowMain {
+		margin-top: 0px !important;
+
+		.scoreCard {
+			background-color: $offWhite;
+			width: 40%;
+			margin: 0px auto;
+			display: block;
+			text-align: center;
+			font-size: 35px;
+
+			.rowScoreCardHeader {
+				padding: 20px;
+				width: 100%;
+				margin: 0px auto;
+				display: block;
+				border-bottom: 2px solid $gray;
+				input {
+					width: 100%;
+					background-color: $offWhite;
+					text-align: center;
+					border: none;
+					box-shadow: none;
+					height: 40px;
+					color: $blue;
+					font-size: 35px;
+				}	
+				::-webkit-input-placeholder {
+	   				color: $blue;
+	   				font-family: $mainFont;
+	   				font-size: 35px;			
+				}
+				::-moz-placeholder {
+					color: $blue;
+	   				font-family: $mainFont;
+	   				font-size: 35px;
+				}
+				:-moz-placeholder {
+					color: $blue;
+	   				font-family: $mainFont;
+	   				font-size: 35px;
+				}
+			}
+			.scores {
+				.row {
+					border-bottom: 2px solid $gray;
+					width: 100%;
+					margin: 0px auto;
+					display: block;
+					padding-top: 15px;
+					.centerScore {
+						border-left: 2px solid $gray;
+						border-right: 2px solid $gray;
+						margin-bottom: 15px;
+						padding-top: 10px;
+					}
+						img {
+							width: 40%;
+						}
+				}
+				.rowBull {
+					border-bottom: none;
+				}
+			}
+			.rowFooter {
+				background-color:$green;
+				padding-top: 10px;
+				padding-bottom: 50px;
+				button {
+					float: left;
+
+				}
+			}	
+		}
+	} 

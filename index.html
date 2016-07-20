@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="cricketScorecard">
+    <head>
+        <meta charset='utf-8'>
+        <title>Cricket Scorecard</title>
+
+        <meta name='description' content='A simple cricket scorecard'>
+        <meta name='author' content='Martha Fairbanks'>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:500" rel="stylesheet">
+    	
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    	<!--CSS style sheet-->
+    	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    	<script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="https://use.fontawesome.com/247c14072a.js"></script>
+    </head>
+
+    <body id="body">
+        <div class = "container-fluid">
+            <header class = "row rowHeader">
+                <div class = "col-xs-12 header">
+                    <img src = "images/cricket.svg">
+                </div>
+            </header>
+           
+            <main ui-view = "main">   
+            </main>
+            
+            <footer  class = "row rowFooter">
+            </footer>
+        </div>    
+
+        <!--link to JS file-->
+        <script src="//cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/factories/api.js"></script>
+        <script src="js/directives/directive.js"></script>
+        <script src="js/controllers/mainController.js"></script>
+    </body>
+</html>

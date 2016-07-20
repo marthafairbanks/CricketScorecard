@@ -1,0 +1,68 @@
+.rowHeader .header img {
+  width: 10%;
+  margin: 0px auto;
+  display: block;
+  margin-left: 46.8%; }
+
+.rowMain {
+  margin-top: 0px !important; }
+  .rowMain .scoreCard {
+    background-color: #faf8f5;
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    font-size: 35px; }
+    .rowMain .scoreCard .rowScoreCardHeader {
+      padding: 20px;
+      width: 100%;
+      margin: 0px auto;
+      display: block;
+      border-bottom: 2px solid #3b3d3d; }
+      .rowMain .scoreCard .rowScoreCardHeader input {
+        width: 100%;
+        background-color: #faf8f5;
+        text-align: center;
+        border: none;
+        box-shadow: none;
+        height: 40px;
+        color: #018CCF;
+        font-size: 35px; }
+      .rowMain .scoreCard .rowScoreCardHeader ::-webkit-input-placeholder {
+        color: #018CCF;
+        font-family: "Mukta Vaani", sans-serif;
+        font-size: 35px; }
+      .rowMain .scoreCard .rowScoreCardHeader ::-moz-placeholder {
+        color: #018CCF;
+        font-family: "Mukta Vaani", sans-serif;
+        font-size: 35px; }
+      .rowMain .scoreCard .rowScoreCardHeader :-moz-placeholder {
+        color: #018CCF;
+        font-family: "Mukta Vaani", sans-serif;
+        font-size: 35px; }
+    .rowMain .scoreCard .scores .row {
+      border-bottom: 2px solid #3b3d3d;
+      width: 100%;
+      margin: 0px auto;
+      display: block;
+      padding-top: 15px; }
+      .rowMain .scoreCard .scores .row .centerScore {
+        border-left: 2px solid #3b3d3d;
+        border-right: 2px solid #3b3d3d;
+        margin-bottom: 15px;
+        padding-top: 10px; }
+      .rowMain .scoreCard .scores .row img {
+        width: 40%; }
+    .rowMain .scoreCard .scores .rowBull {
+      border-bottom: none; }
+    .rowMain .scoreCard .rowFooter {
+      background-color: #7cbd7e;
+      padding-top: 10px;
+      padding-bottom: 50px; }
+      .rowMain .scoreCard .rowFooter button {
+        float: left; }
+
+body {
+  background: #7cbd7e;
+  font-family: "Mukta Vaani", sans-serif;
+  color: #018CCF; }
