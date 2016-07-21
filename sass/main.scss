@@ -8,6 +8,8 @@ $decoFont: 'Limelight', cursive;
 
 @import "header";
 @import "home";
+@import "modal";
+@import "popover";
 
 body{
 	background: $green;

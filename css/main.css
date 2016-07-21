@@ -11,35 +11,6 @@
     margin-top: 10px;
     cursor: pointer; }
 
-.modal-content {
-  color: #3b3d3d;
-  background-color: #faf8f5; }
-  .modal-content .modal-header {
-    font-family: "Limelight", cursive;
-    color: #337ab7; }
-    .modal-content .modal-header h2 {
-      text-align: center; }
-  .modal-content .modal-body {
-    font-family: "Mukta Vaani", sans-serif; }
-    .modal-content .modal-body .login h3 {
-      text-align: center;
-      margin-top: 0px; }
-    .modal-content .modal-body .register h3 {
-      text-align: center;
-      margin-top: 0px; }
-
-.popover-content {
-  color: #3b3d3d;
-  background-color: #faf8f5; }
-  .popover-content .tinyX {
-    width: 15px;
-    margin-bottom: 2px; }
-  .popover-content .tinyCricket {
-    width: 30px;
-    margin-bottom: 5px; }
-  .popover-content .secondP {
-    margin-bottom: -10px; }
-
 .rowMain {
   padding-bottom: 100px; }
   .rowMain .scoreCard {
@@ -111,6 +82,35 @@
       .rowMain .scoreCard .rowFooter button {
         float: left;
         margin-left: -15px; }
+
+.modal-content {
+  color: #3b3d3d;
+  background-color: #faf8f5; }
+  .modal-content .modal-header {
+    font-family: "Limelight", cursive;
+    color: #337ab7; }
+    .modal-content .modal-header h2 {
+      text-align: center; }
+  .modal-content .modal-body {
+    font-family: "Mukta Vaani", sans-serif; }
+    .modal-content .modal-body .login h3 {
+      text-align: center;
+      margin-top: 0px; }
+    .modal-content .modal-body .register h3 {
+      text-align: center;
+      margin-top: 0px; }
+
+.popover-content {
+  color: #3b3d3d;
+  background-color: #faf8f5; }
+  .popover-content .tinyX {
+    width: 15px;
+    margin-bottom: 2px; }
+  .popover-content .tinyCricket {
+    width: 30px;
+    margin-bottom: 5px; }
+  .popover-content .secondP {
+    margin-bottom: -10px; }
 
 body {
   background: #5AB670;

@@ -20,7 +20,31 @@
 		        controllerAs: 'controller'
 		      }
 		  },
-	    });
+	    })
+
+	    .state('register', {
+      	url: '/',
+      	views: {
+      		'modalLeft': {
+		        templateUrl: '../views/register.html',
+		        controller: 'RegisterController',
+		        controllerAs: 'controller'
+		      }
+		  },
+	    })
+	    
+	    .state('login', {
+      	url: '/',
+      	views: {
+      		'modalRight': {
+		        templateUrl: '../views/login.html',
+		        controller: 'LoginController',
+		        controllerAs: 'controller'
+		      }
+		  },
+	    });	    	    
+
+
 	});
 })();
 
