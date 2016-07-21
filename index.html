@@ -6,28 +6,71 @@
 
         <meta name='description' content='A simple cricket scorecard'>
         <meta name='author' content='Martha Fairbanks'>
-
         <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 
-        <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:500" rel="stylesheet">
-    	
-    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    	<!--CSS style sheet-->
-    	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-    	<script src="node_modules/angular/angular.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="https://use.fontawesome.com/247c14072a.js"></script>
+
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Limelight|Mukta+Vaani" rel="stylesheet">
+
     </head>
 
     <body id="body">
         <div class = "container-fluid">
             <header class = "row rowHeader">
                 <div class = "col-xs-12 header">
-                    <img src = "images/cricket.svg">
+                    <img data-toggle="modal" data-target="#loginRegister" class = "logo" src = "images/cricket.svg">
+                    <i class="fa fa-question-circle" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<p>To get started click on the <img class = 'tinyX' src = '../images/score3.svg'> icon you mean to mark.</p> <p class = 'secondP'>To save and view past games, register by clicking on the <img class = 'tinyCricket' src = '../images/cricket.svg'> icon.</p>" aria-hidden="true"></i>
+
                 </div>
-            </header>
+                
+                <!--modal-->
+                <div id="loginRegister" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">          
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title">Cricket Scorecard</h2>
+                            </div>
+                            <div class="modal-body row">
+                                <div class = "col-xs-6 register">
+                                    <h3>Register</h3>
+                                    <form>
+                                      <fieldset class="form-group">
+                                        <label for="registerFirstName">First Name</label>
+                                        <input type="text" class="form-control m-b-10" id="registerFirstName" placeholder="Enter first name">
+                                        <label for="registerLastName">Last Name</label>
+                                        <input type="text" class="form-control m-b-10" id="registerLastName" placeholder="Enter last name">
+                                        <label for="registerEmail">Email address</label>
+                                        <input type="email" class="form-control m-b-10" id="registerEmail" placeholder="Enter email">
+                                        <label for="registerPassword">Password</label>
+                                        <input type="password" class="form-control m-b-10" id="registerPassword" placeholder="Create password">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </fieldset>
+                                    </form>                                    
+                                </div>                            
+                                <div class = "col-xs-6 login">
+                                    <h3>Login</h3>
+                                    <form>
+                                      <fieldset class="form-group">
+                                        <label for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control m-b-10" id="loginEmail" placeholder="Enter email">
+                                        <label for="loginPassword">Password</label>
+                                        <input type="password" class="form-control m-b-10" id="loginPassword" placeholder="Password">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </fieldset>
+                                    </form> 
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
            
             <main ui-view = "main">   
             </main>
@@ -36,9 +79,10 @@
             </footer>
         </div>    
 
-        <!--link to JS file-->
+
         <script src="//cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/popover.js"></script>        
         <script src="js/factories/api.js"></script>
         <script src="js/directives/directive.js"></script>
         <script src="js/controllers/mainController.js"></script>

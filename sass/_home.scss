@@ -1,65 +1,81 @@
 	.rowMain {
-		margin-top: 0px !important;
-
+		padding-bottom: 100px;
 		.scoreCard {
 			background-color: $offWhite;
-			width: 40%;
+			min-width: 500px;
+			max-width: 500px;
 			margin: 0px auto;
 			display: block;
 			text-align: center;
 			font-size: 35px;
+			box-shadow: (0 10px 10px 0 rgba(#000000, 0.16),
+      		0 10px 10px 0 rgba(#000000, 0.23));
+      		font-family: $decoFont;
+      		font-size: 35px;
 
 			.rowScoreCardHeader {
 				padding: 20px;
 				width: 100%;
 				margin: 0px auto;
 				display: block;
-				border-bottom: 2px solid $gray;
+				border-bottom: 3px solid $gray;
 				input {
 					width: 100%;
 					background-color: $offWhite;
 					text-align: center;
 					border: none;
+					padding: none;
 					box-shadow: none;
-					height: 40px;
+					height: 50px;
 					color: $blue;
-					font-size: 35px;
+					font-size: 30px;
 				}	
 				::-webkit-input-placeholder {
 	   				color: $blue;
-	   				font-family: $mainFont;
-	   				font-size: 35px;			
+	   				font-family: $decoFont;
+	   				font-size: 30px;			
 				}
 				::-moz-placeholder {
 					color: $blue;
-	   				font-family: $mainFont;
-	   				font-size: 35px;
+	   				font-family: $decoFont;
+	   				font-size: 30px;
 				}
 				:-moz-placeholder {
 					color: $blue;
-	   				font-family: $mainFont;
-	   				font-size: 35px;
+	   				font-family: $decoFont;
+	   				font-size: 30px;
 				}
 			}
 			.scores {
 				.row {
-					border-bottom: 2px solid $gray;
+					border-bottom: 3px solid $gray;
 					width: 100%;
 					margin: 0px auto;
 					display: block;
 					padding-top: 15px;
 					.centerScore {
-						border-left: 2px solid $gray;
-						border-right: 2px solid $gray;
+						border-left: 3px solid $gray;
+						border-right: 3px solid $gray;
 						margin-bottom: 15px;
 						padding-top: 10px;
 					}
-						img {
+						.scoreImage {
 							width: 40%;
 						}
 				}
 				.rowBull {
 					border-bottom: none;
+					height: 100px;
+					.centerScore {
+						border-left: none;
+						border-right: none;
+					
+						.bullImage {
+							width: 225%;
+							margin-left: -33px;
+							margin-top: -38px;
+						}
+					}	
 				}
 			}
 			.rowFooter {
@@ -68,6 +84,7 @@
 				padding-bottom: 50px;
 				button {
 					float: left;
+					margin-left: -15px;
 				}
 			}	
 		}

@@ -1,68 +1,121 @@
-.rowHeader .header img {
-  width: 10%;
-  margin: 0px auto;
-  display: block;
-  margin-left: 46.8%; }
+.rowHeader {
+  margin: 0px; }
+  .rowHeader .header .logo {
+    width: 150px;
+    margin-left: 46%;
+    cursor: pointer; }
+  .rowHeader .header .fa-question-circle {
+    font-size: 30px;
+    color: #3b3d3d;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer; }
+
+.modal-content {
+  color: #3b3d3d;
+  background-color: #faf8f5; }
+  .modal-content .modal-header {
+    font-family: "Limelight", cursive;
+    color: #337ab7; }
+    .modal-content .modal-header h2 {
+      text-align: center; }
+  .modal-content .modal-body {
+    font-family: "Mukta Vaani", sans-serif; }
+    .modal-content .modal-body .login h3 {
+      text-align: center;
+      margin-top: 0px; }
+    .modal-content .modal-body .register h3 {
+      text-align: center;
+      margin-top: 0px; }
+
+.popover-content {
+  color: #3b3d3d;
+  background-color: #faf8f5; }
+  .popover-content .tinyX {
+    width: 15px;
+    margin-bottom: 2px; }
+  .popover-content .tinyCricket {
+    width: 30px;
+    margin-bottom: 5px; }
+  .popover-content .secondP {
+    margin-bottom: -10px; }
 
 .rowMain {
-  margin-top: 0px !important; }
+  padding-bottom: 100px; }
   .rowMain .scoreCard {
     background-color: #faf8f5;
-    width: 40%;
+    min-width: 500px;
+    max-width: 500px;
     margin: 0px auto;
     display: block;
     text-align: center;
+    font-size: 35px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16), 0 10px 10px 0 rgba(0, 0, 0, 0.23);
+    font-family: "Limelight", cursive;
     font-size: 35px; }
     .rowMain .scoreCard .rowScoreCardHeader {
       padding: 20px;
       width: 100%;
       margin: 0px auto;
       display: block;
-      border-bottom: 2px solid #3b3d3d; }
+      border-bottom: 3px solid #3b3d3d; }
       .rowMain .scoreCard .rowScoreCardHeader input {
         width: 100%;
         background-color: #faf8f5;
         text-align: center;
         border: none;
+        padding: none;
         box-shadow: none;
-        height: 40px;
-        color: #018CCF;
-        font-size: 35px; }
+        height: 50px;
+        color: #337ab7;
+        font-size: 30px; }
       .rowMain .scoreCard .rowScoreCardHeader ::-webkit-input-placeholder {
-        color: #018CCF;
-        font-family: "Mukta Vaani", sans-serif;
-        font-size: 35px; }
+        color: #337ab7;
+        font-family: "Limelight", cursive;
+        font-size: 30px; }
       .rowMain .scoreCard .rowScoreCardHeader ::-moz-placeholder {
-        color: #018CCF;
-        font-family: "Mukta Vaani", sans-serif;
-        font-size: 35px; }
+        color: #337ab7;
+        font-family: "Limelight", cursive;
+        font-size: 30px; }
       .rowMain .scoreCard .rowScoreCardHeader :-moz-placeholder {
-        color: #018CCF;
-        font-family: "Mukta Vaani", sans-serif;
-        font-size: 35px; }
+        color: #337ab7;
+        font-family: "Limelight", cursive;
+        font-size: 30px; }
     .rowMain .scoreCard .scores .row {
-      border-bottom: 2px solid #3b3d3d;
+      border-bottom: 3px solid #3b3d3d;
       width: 100%;
       margin: 0px auto;
       display: block;
       padding-top: 15px; }
       .rowMain .scoreCard .scores .row .centerScore {
-        border-left: 2px solid #3b3d3d;
-        border-right: 2px solid #3b3d3d;
+        border-left: 3px solid #3b3d3d;
+        border-right: 3px solid #3b3d3d;
         margin-bottom: 15px;
         padding-top: 10px; }
-      .rowMain .scoreCard .scores .row img {
+      .rowMain .scoreCard .scores .row .scoreImage {
         width: 40%; }
     .rowMain .scoreCard .scores .rowBull {
-      border-bottom: none; }
+      border-bottom: none;
+      height: 100px; }
+      .rowMain .scoreCard .scores .rowBull .centerScore {
+        border-left: none;
+        border-right: none; }
+        .rowMain .scoreCard .scores .rowBull .centerScore .bullImage {
+          width: 225%;
+          margin-left: -33px;
+          margin-top: -38px; }
     .rowMain .scoreCard .rowFooter {
-      background-color: #7cbd7e;
+      background-color: #5AB670;
       padding-top: 10px;
       padding-bottom: 50px; }
       .rowMain .scoreCard .rowFooter button {
-        float: left; }
+        float: left;
+        margin-left: -15px; }
 
 body {
-  background: #7cbd7e;
+  background: #5AB670;
   font-family: "Mukta Vaani", sans-serif;
-  color: #018CCF; }
+  color: #337ab7; }
+
+.m-b-10 {
+  margin-bottom: 10px; }
