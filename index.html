@@ -24,30 +24,30 @@
         <div class = "container-fluid">
             <header class = "row rowHeader">
                 <div class = "col-xs-12 header">
-                    <img data-toggle="modal" data-target="#loginRegister" class = "logo" src = "images/cricket.svg">
-                    <i class="fa fa-question-circle" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="<p>To get started, click on the <img class = 'tinyX' src = '../images/score3.svg'> icon you mean to mark.</p> <p class = 'secondP'>To save and view past games, register by clicking on the <img class = 'tinyCricket' src = '../images/cricket.svg'> icon.</p>" aria-hidden="true"></i>
+                    <img data-toggle="modal" data-target="#modal" class = "logo" src = "images/cricket.svg">
+                    <i class="fa fa-question-circle" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="<p>To get started, click on the <img class = 'tinyX' src = '../images/score3.svg'> icon you mean to mark.</p> <p class = 'secondP'>To save and view past games, click on the <img class = 'tinyCricket' src = '../images/cricket.svg'> icon.</p>" aria-hidden="true"></i>
 
                 </div>
                 
                 <!--modal-->
-                <div id="loginRegister" class="modal fade" role="dialog">
+                <div id="modal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">          
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h2 class="modal-title">Cricket Scorecard</h2>
                             </div>
-                            <div class="modal-body">
-                                <div ui-view = "modalLeft">
-                                </div>                            
-                                <div ui-view = "modalRight">
+                            <div class="modal-body">    
+                                <div ui-view = "modal.profile">
+                                </div>
+                                <div ui-view = "modal.registerLogin">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </header>    
 
-           
             <main ui-view = "main">   
             </main>
             
@@ -63,7 +63,7 @@
         <script src="js/factories/localStore.js"></script>        
         <script src="js/directives/directive.js"></script>
         <script src="js/controllers/mainController.js"></script>
-        <script src="js/controllers/registerController.js"></script>
-        <script src="js/controllers/loginController.js"></script>                 
+        <script src="js/controllers/registerLoginController.js"></script>
+        <script src="js/controllers/profileController.js"></script>                         
     </body>
 </html>

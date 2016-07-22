@@ -3,7 +3,7 @@
     
     angular
     .module('cricketScorecard')
-    .controller('MainController', function(API) {
+    .controller('mainController', function(API) {
         var vm = this;
 
         vm.form = [];
@@ -23,49 +23,6 @@
         vm.scores.p2_15 = 0;
         vm.scores.p1_bull = 0;
         vm.scores.p2_bull = 0; 
-
-
-       	//post game scores to api on submit button click
-        vm.postGame = function postGame(){
-
-          if (vm.form.p1_name == null) {
-            vm.scores.p1_name = "Player 1";  
-          }
-          else {
-            vm.scores.p1_name = vm.form.p1_name;
-          } 
-
-          if (vm.form.p2_name == null) {
-            vm.scores.p2_name = "Player 2";  
-          }
-          else {
-            vm.scores.p2_name = vm.form.p2_name;
-          }
-         console.log(vm.scores);  
-
-        var postGame = API.postGame(vm.scores);
-
-        postGame.then(function(response) {
-          console.log(response);
-
-          vm.scores.p1_20 = 0;
-          vm.scores.p2_20 = 0;
-          vm.scores.p1_19 = 0;
-          vm.scores.p2_19 = 0;
-          vm.scores.p1_18 = 0;
-          vm.scores.p2_18 = 0;
-          vm.scores.p1_17 = 0;
-          vm.scores.p2_17 = 0;
-          vm.scores.p1_16 = 0;
-          vm.scores.p2_16 = 0;
-          vm.scores.p1_15 = 0;
-          vm.scores.p2_15 = 0;
-          vm.scores.p1_bull = 0;
-          vm.scores.p2_bull = 0;                   
-
-        });
-       };
-
 
        //increases score when player 1 20 img is clicked
        vm.scoreCounter0120 = function scoreCounter0120() {

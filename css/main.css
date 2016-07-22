@@ -84,6 +84,7 @@
         margin-left: -15px; }
 
 .modal-content {
+  height: 500px;
   color: #3b3d3d;
   background-color: #faf8f5; }
   .modal-content .modal-header {
@@ -99,6 +100,10 @@
     .modal-content .modal-body .register h3 {
       text-align: center;
       margin-top: 0px; }
+    .modal-content .modal-body .profile img {
+      width: 25%; }
+    .modal-content .modal-body .profile ul {
+      text-decoration: none; }
 
 .popover-content {
   color: #3b3d3d;
@@ -119,3 +124,24 @@ body {
 
 .m-b-10 {
   margin-bottom: 10px; }
+
+.modal-content {
+  color: #3b3d3d;
+  background-color: #faf8f5; }
+  .modal-content .modal-header {
+    font-family: "Limelight", cursive;
+    color: #337ab7; }
+    .modal-content .modal-header h2 {
+      text-align: center; }
+  .modal-content .modal-body {
+    font-family: "Mukta Vaani", sans-serif; }
+    .modal-content .modal-body .login h3 {
+      text-align: center;
+      margin-top: 0px; }
+    .modal-content .modal-body .register h3 {
+      text-align: center;
+      margin-top: 0px; }
+    .modal-content .modal-body .profile img {
+      width: 25%; }
+    .modal-content .modal-body .profile ul {
+      text-decoration: none; }

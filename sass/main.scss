@@ -21,3 +21,37 @@ body{
 }
 
 
+.modal-content {
+	color: $gray;
+	background-color: $offWhite;
+	.modal-header {
+		font-family: $decoFont;
+		color: $blue;
+		h2 {
+			text-align: center;
+		}
+	}	
+	.modal-body {
+		font-family: $mainFont;
+		.login {
+			h3 {
+				text-align: center;
+				margin-top: 0px;
+			}
+		}
+		.register {
+			h3 {
+				text-align: center;
+				margin-top: 0px;				
+			}
+		}
+		.profile {
+			img {
+				width: 25%;
+			}
+			ul {
+				text-decoration: none;
+			}
+		}	
+	}	
+}

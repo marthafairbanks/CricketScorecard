@@ -4,48 +4,37 @@
         .module('cricketScorecard', ['ui.router','backand'])
         .config(function(BackandProvider, $stateProvider, $urlRouterProvider) {
 
-	  	BackandProvider.setAppName('cricketscorecard');
-      	BackandProvider.setSignUpToken('4ecbba9f-ea69-4dbf-b172-81db87d45235');
-      	BackandProvider.setAnonymousToken('9e2d8e65-6e83-4163-bc40-8e171498c0a5');
+          BackandProvider.setAppName('cricketscorecard');
+          BackandProvider.setSignUpToken('4ecbba9f-ea69-4dbf-b172-81db87d45235');
+          BackandProvider.setAnonymousToken('9e2d8e65-6e83-4163-bc40-8e171498c0a5');
 
-	  	$urlRouterProvider.otherwise("/");
+          $urlRouterProvider.otherwise("/");
 
-	  	$stateProvider
-	    .state('home', {
-      	url: '/',
-      	views: {
-      		'main': {
-		        templateUrl: '../views/home.html',
-		        controller: 'MainController',
-		        controllerAs: 'controller'
-		      }
-		  },
-	    })
+          $stateProvider
+          .state('home', {
+          url: '/',
+          views: {
+              'main': {
+                templateUrl: '../views/home.html',
+                controller: 'mainController',
+                controllerAs: 'controller'
+              },
 
-	    .state('register', {
-      	url: '/',
-      	views: {
-      		'modalLeft': {
-		        templateUrl: '../views/register.html',
-		        controller: 'RegisterController',
-		        controllerAs: 'controller'
-		      }
-		  },
-	    })
-	    
-	    .state('login', {
-      	url: '/',
-      	views: {
-      		'modalRight': {
-		        templateUrl: '../views/login.html',
-		        controller: 'LoginController',
-		        controllerAs: 'controller'
-		      }
-		  },
-	    });	    	    
+              'modal.profile': {
+                templateUrl: '../views/modal/profile.html',
+                controller: 'profileController',
+                controllerAs: 'controller'
+              },
+
+              'modal.registerLogin': {
+                templateUrl: '../views/modal/registerLogin.html',
+                controller: 'registerLoginController',
+                controllerAs: 'controller'
+              }
+          },
+        })
+            
 
 
-	});
+    });
 })();
-
-

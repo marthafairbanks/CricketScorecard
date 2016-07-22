@@ -3,12 +3,22 @@
     
     angular
     .module('cricketScorecard')
-    .controller('loginController', function(API, localStore, $state) {
+    .controller('registerLoginController', function(API, localStore, $state) {
       var vm = this;
-
       vm.showAlert = false;
 
-      vm.submit = function(){
+
+      vm.submitRegister = function(){
+          var register = API.registerUser(vm.form);
+
+          register.then(function(results){
+            localStore.saveToken(results.config.data.token);
+            localStore.saveUserId(results.data.__metadata.id);
+            // $state.go('admin');
+          });
+       };
+      
+      vm.submitLogin = function(){
         var login = API.loginUser(vm.form);
 
         login.then(function(results){
@@ -25,7 +35,7 @@
             vm.showAlert = true;
           }
         });
-       };
-
+       };       
+      
     });
 })();
