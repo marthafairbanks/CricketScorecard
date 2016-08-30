@@ -1,5 +1,5 @@
 {
-  "name": "angularstarter",
+  "name": "CricketScorecard",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -19,9 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakeboyles/angularstarter.git"
+    "url": "git+https://github.com/marthafairbanks/CricketScorecard"
   },
-  "author": "Jake Boyles",
+  "author": "Martha Fairbanks",
   "license": "ISC",
-  "homepage": "https://github.com/jakeboyles/angularstarter#readme"
+  "homepage": "https://github.com/marthafairbanks/CricketScorecard#readme"
 }
