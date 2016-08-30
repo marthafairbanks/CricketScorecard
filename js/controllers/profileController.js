@@ -5,15 +5,22 @@
     .module('cricketScorecard')
     .controller('profileController', function(API, localStore, $state) {
       var vm = this;
-      console.log("hey!");
 
-      if(localStore.getToken() === null) {
-        // $state.go('modal.registerLogin');
-       }
+      vm.showProfile = function() {
+        if (localStore.getToken() === null) {
+          return false;
+        }
+        else {
+          return true;
+          vm.userProfile = function () {
+            API.getUserInfo();
+          }  
+        }
+      };    
 
+      //logs out the user by deleting their token in local storage
       vm.logout = function() {
         localStore.logout();
-        // $state.go('modal.registerLogin');
       };
 
       //post game scores to api on submit button click

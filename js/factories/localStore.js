@@ -18,7 +18,6 @@
 		 		return true;
 		 	};
 
-
 		 	var saveToken = function(token) {
 		 		localStorage.setItem('token',token);
 		 	};

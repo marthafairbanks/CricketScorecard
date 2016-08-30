@@ -4,20 +4,45 @@
     angular
     .module('cricketScorecard')
     .controller('registerLoginController', function(API, localStore, $state) {
+      
       var vm = this;
       vm.showAlert = false;
 
+      //shows the register/login page if theres no token in local storage
+      vm.showRegisterLogin = function() {
+        if (localStore.getToken() !== null) {
+          return false;
+        }
+        else {          
+          return true;
+        }
+      };  
 
-      vm.submitRegister = function(){
+      //shows the profile page if there is a token in local storage
+      vm.showProfile = function() {
+        if (localStore.getToken() === null) {
+          return false;
+        }
+        else {
+          return true;
+        }
+      };
+    
+      //submits the registration form to backand api and writes the token and 
+      //id to local storage
+      vm.submitRegister = function() {
           var register = API.registerUser(vm.form);
 
           register.then(function(results){
             localStore.saveToken(results.config.data.token);
             localStore.saveUserId(results.data.__metadata.id);
-            // $state.go('admin');
+            vm.showProfile();
+            vm.showRegisterLogin();
           });
        };
       
+      //checks the login form info against whats in the api and adds
+      //the token and user id to local storage
       vm.submitLogin = function(){
         var login = API.loginUser(vm.form);
 
@@ -28,7 +53,8 @@
             localStore.saveToken(results.data.data[0].token);
             localStore.saveUserId(results.data.data[0].id);
             vm.showAlert = false;
-            // $state.go('admin');
+            vm.showProfile();
+            vm.showRegisterLogin();
           }
           else
           {

@@ -6,6 +6,8 @@
     .controller('mainController', function(API) {
         var vm = this;
 
+        
+        //clears form and sets the scores for all points to 0 on page load
         vm.form = [];
 
         vm.scores = {};

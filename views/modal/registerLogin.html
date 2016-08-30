@@ -1,44 +1,46 @@
-<div class = "col-xs-6 register">
+<div ng-show = "controller.showRegisterLogin()">
+    <div class = "col-xs-6 register">
 
-    <h3>Register</h3>
-    <form ng-submit="controller.submitRegister()">
-        <fieldset class="form-group">
-        
-        <label for="registerFirstName">First Name</label>
-        <input type="text" class="form-control m-b-10" id="registerFirstName" ng-model="controller.form.firstName" placeholder="Enter first name">
-        
-        <label for="registerLastName">Last Name</label>
-        <input type="text" class="form-control m-b-10" id="registerLastName" ng-model="controller.form.lastName" placeholder="Enter last name">
-        
-        <label for="registerEmail">Email address</label>
-        <input type="email" class="form-control m-b-10" id="registerEmail" ng-model="controller.form.email" placeholder="Enter email">
-        
-        <label for="registerPassword">Password</label>
-        <input type="password" class="form-control m-b-10" id="registerPassword" ng-model="controller.form.password" placeholder="Create password">
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
-        
-        </fieldset>
-    </form>
-</div> 
-
-<div class = "col-xs-6 login"> 
-    <h3>Login</h3>
-    <form ng-submit="controller.submitLogin()">
-        <fieldset class="form-group">
+        <h3>Register</h3>
+        <form ng-submit="controller.submitRegister()">
+            <fieldset class="form-group">
             
-            <label for="loginEmail">Email address</label>
-            <input type="email" class="form-control m-b-10" id="loginEmail" ng-model="controller.form.email" placeholder="Enter email">
+            <label for="registerFirstName">First Name</label>
+            <input type="text" class="form-control m-b-10" id="registerFirstName" ng-model="controller.form.firstName" placeholder="Enter first name">
             
-            <label for="loginPassword">Password</label>
-            <input type="password" class="form-control m-b-10" id="loginPassword" ng-model="controller.form.password" placeholder="Password">
+            <label for="registerLastName">Last Name</label>
+            <input type="text" class="form-control m-b-10" id="registerLastName" ng-model="controller.form.lastName" placeholder="Enter last name">
             
+            <label for="registerEmail">Email address</label>
+            <input type="email" class="form-control m-b-10" id="registerEmail" ng-model="controller.form.email" placeholder="Enter email">
+            
+            <label for="registerPassword">Password</label>
+            <input type="password" class="form-control m-b-10" id="registerPassword" ng-model="controller.form.password" placeholder="Create password">
             
             <button type="submit" class="btn btn-primary">Submit</button>
-        </fieldset>
-        
-        <div ng-show="controller.showAlert" class="alert alert-warning alert-dismissible" role="alert">
-            <p>Your email address or password is incorrect.</p>
-        </div> 
-    </form>
-</div>   
+            
+            </fieldset>
+        </form>
+    </div> 
+
+    <div class = "col-xs-6 login"> 
+        <h3>Login</h3>
+        <form ng-submit="controller.submitLogin()">
+            <fieldset class="form-group">
+                
+                <label for="loginEmail">Email address</label>
+                <input type="email" class="form-control m-b-10" id="loginEmail" ng-model="controller.form.email" placeholder="Enter email">
+                
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control m-b-10" id="loginPassword" ng-model="controller.form.password" placeholder="Password">
+                
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+            
+            <div ng-show="controller.showAlert" class="alert alert-warning alert-dismissible" role="alert">
+                <p>Your email address or password is incorrect.</p>
+            </div> 
+        </form>
+    </div>
+</div>       
